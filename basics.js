@@ -5,19 +5,19 @@
 
 var coolWord = "Yolololo"; // this is a string (surrounded by quotes)
 var pizzasCount = 18; // this is a number
-var x = 2n ** 53n; // this is a BigInt
-var likesIcecream = true; // this is a boolean
-var universeAge = undefined; // this is undefined
-let sym = Symbol("foo"); // this is a symbol
+var x = 2n ** 53n; // this is a BigInt                   ??????
+var likesIcecream = true; // this is a boolean       
+var universeAge = undefined; // this is undefined        
+let sym = Symbol("foo"); // this is a symbol             ??????  
 
 // To check the type of a primitive:
 console.log(coolWord, " => ", typeof coolWord);
 
 // Exercise 1 : print the type of the remaining variables
-console.log();
-console.log();
-console.log();
-console.log();
+console.log(pizzasCount, "=>", typeof pizzasCount);
+console.log(x, "=>", typeof x);
+console.log(likesIcecream, "=>", typeof likesIcecream);
+console.log(universeAge, "=>", typeof universeAge);
 
 // To read: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#BigInt_type
 
@@ -27,22 +27,27 @@ console.log();
 
 // Exercise 2: uncomment the following line to get some motivation
 
-// window.alert("Hello JavaScripter! Ohhh the places we will go :)");
-
+window.alert("Hello JavaScripter! Ohhh the places we will go :)");
 // We can play around with the JS primitives as we please.
 
 // Exercise 2: create the needed variables and uncomment the following lines
-
 // Create the following variables: name, coins, isHappy
+var name = "Faraz";
+var coins = 4;
+var isHappy = true;
+
+console.log(name, typeof name);
+console.log(coins, typeof coins);
+console.log(isHappy, typeof isHappy);
 
 // Uncomment the lines bellow to get the show running
-// alert("Welcome: " + name);
+alert("Welcome: " + name);
 
-// alert("Icecreams are 1$ a piece.");
+alert("Icecreams are 1$ a piece.");
 
-// alert("You can afford:" coins / 1);
+alert("You can afford: coins/ 1");
 
-// alert("And that makes you", isHappy ? "happy" : "sad")
+alert("And that makes you", isHappy ? "happy" : "sad")        //  ???????????
 
 // ----- ON CONSOLE LOG -----
 
@@ -55,11 +60,11 @@ var randomNumber = 121;
 
 // Exercise 3: uncomment the following lines to see the magic of console log
 
-// console.log("Hello Yellow Bungallow");
-// console.log(strongAnimal);
-// console.log(fastAnimal);
-// console.log(holidaysAreCool);
-// console.log(randomNumber + 15);
+console.log("Hello Yellow Bungallow");
+console.log(strongAnimal);
+console.log(fastAnimal);
+console.log(holidaysAreCool);
+console.log(randomNumber + 15);
 
 // ----- ON CONFIRM AND PROMPT -----
 
@@ -73,17 +78,22 @@ alert(howMotivatedAreYou);
 // ----- ON CONDITIONALS -----
 
 // Conditionals are super dupper usefull. They will help us model our business logic.
-var likesTacos = confirm("Do you like tacos?");
+//var likesTacos = confirm("Do you like tacos?");
 var likesClubMate = confirm("Do you like Club Mate?");
-var sushiType = prompt("What kind of coffe?");
+//var coffeeType = prompt("What kind of coffe?");
 
 // If the user likes tacos alert that they like tacos
-if (likesTacos) {
-  alert("Ohh you latin soul it is " + likesTacos + " that you love tacos");
-}
+//  if (likesTacos) {
+//  alert("Ohh you latin soul it is " + likesTacos + " that you love tacos");
+//  }
 
 // Exercise 5: build the conditionals to satisfy following requirement
-
+if (likesClubMate) {
+  alert("You will love berlin");
+}
+else {
+  alert("then have coffee");
+}
 // If the user likes Club Mate alert that they will love Berlin
 
 // If none of the previous condition fulfils alert that at least they like coffe and the type of coffe
