@@ -47,13 +47,22 @@ for (var i = 0; i < 24; i++) {
 // We have a dishes array
 var dishes = ["chesse", "eggs", "brocolli", "chocolate", "carrots"];
 
-//for (i = 0; i < dishes.length; i++) {
-//  if (dishes = "b" || "h") {
-//    console.log("I don't like " + dishes[i]);
-// }
-//  if (dishes = "b" || "h") {
-//    console.log("I don't like " + dishes[i]);
-//    }
+for (let i = 0; i < dishes.length; i++) {
+  if (dishes[i][0] === ("b") || dishes[i][0] === ("e")) {
+    console.log("I don't like " + dishes[i]);
+  }
+  if (dishes[i][0] === "c") {
+    console.log("I like " + dishes[i]);
+  }
+}
+for (i = 0; i < dishes.length; i++) {
+  if (dishes[i][0] === ("b") || dishes[i][0] === ("e")) {
+    console.log("I don't like " + dishes[i]);
+  }
+  else (dishes[i][0]) === ("c") {
+    console.log("I don't like " + dishes[i]);
+  }
+}
 
 
 
